@@ -14,7 +14,7 @@ In addition, please `pip install` the following packages:
 
 ```bash
 $ git clone git@github.com:johnvblazic/InfoGAN.git
-$ docker run -v $(pwd)/InfoGAN:/InfoGAN -w /InfoGAN -it -p 8888:8888 gcr.io/tensorflow/tensorflow:r0.9rc0-devel
+$ docker run -v $(pwd)/InfoGAN:/InfoGAN -w /InfoGAN -it -p 0.0.0.0:6006 -p 8888:8888 gcr.io/tensorflow/tensorflow:r0.9rc0-devel
 root@X:/InfoGAN# pip uninstall prettytensor
 root@X:/InfoGAN# pip install -r requirements.txt
 root@X:/InfoGAN# export PYTHONPATH=$pwd
